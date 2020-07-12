@@ -1,0 +1,115 @@
+//main: style.less
+
+.wrapper:before {
+  content: " ";
+  padding-top: 8rem;
+  mix-blend-mode: darken;
+}
+
+.nav {
+  margin-top: 1rem;
+  padding: 0;
+  text-align: center;
+  z-index: 1000;
+  mix-blend-mode: lighten;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+  padding: 0;
+  margin: 0 auto;
+
+}
+
+.nav-bar li {
+  padding: 4rem 0 1.3rem 0;
+  height: 100%;
+}
+
+.nav-bar a {
+  margin: 0 5px 0 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.nav-bar li a:hover {
+  color: rgb(255, 177, 251);
+
+}
+
+.nav-bar li a:active {
+  color: rgb(255, 255, 255);
+}
+
+
+/*MOBILE*/
+
+
+@media @breakpoint-mobile {
+  .nav-bar {
+    visibility: hidden;
+    width: 100%;
+    background-color: fade(@red, 85%);
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 6rem;
+    text-align: center;
+    line-height: 2.5rem;
+    padding: 1.5rem 0 1.5rem 0;
+  }
+
+  .mob-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 3rem;
+    width: 3rem;
+    padding: 0.9rem;
+  }
+
+  .mob-menu span {
+    display: flex;
+    background-color: @white;
+    height: 0.4rem;
+    width: 100%;
+    margin: 0.3rem 0 0.3rem 0;
+  }
+
+  .mob-menu:hover span {
+    background-color: fade(@white, 80%);
+  }
+
+  .mob-menu:active span {
+    background-color: fade(@white, 60%);
+  }
+
+  .nav {
+    margin-top: 1.5rem;
+    padding-top: 1.2rem;
+    mix-blend-mode: normal;
+  }
+
+  .nav-bar li {
+    padding: 0.2rem 0 0.2rem 0;
+  }
+
+  .nav-bar a {
+    color: @white;
+    font-size: 1.5em;
+  }
+
+  .nav-bar li a:hover {
+    color: fade(@white, 80%);
+
+  }
+
+  .nav-bar li a:active {
+    color: fade(@white, 60%);
+  }
+
+}
