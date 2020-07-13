@@ -47,6 +47,11 @@ section {
     height: 153vh;
   }
 }
+@media (max-width: 480px) {
+  .introduce {
+    height: 120vh;
+  }
+}
 @media (max-width: 400px) {
   .introduce {
     height: 170vh;
@@ -57,6 +62,11 @@ section {
 }
 .skills-portfolio {
   background-image: url('../img/66.jpg');
+}
+@media (max-width: 480px) {
+  .skills-portfolio {
+    height: 80vh;
+  }
 }
 @media (max-width: 400px) {
   .skills-portfolio {
@@ -79,7 +89,7 @@ section {
 }
 @media (max-width: 480px) {
   .resume {
-    height: 97vh;
+    height: 77vh;
   }
 }
 @media (max-width: 400px) {
