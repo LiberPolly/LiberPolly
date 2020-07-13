@@ -311,3 +311,46 @@ div .button {
     background-color: fade(@white, 90%);
   }
 }
+
+@media @breakpoint-mobile-xs {
+  .portfolio-item {
+    margin: 0.5rem;
+    width: 480px;
+    height: 250px;
+  }
+
+  .portfolio-img {
+    width: 0%;
+    :hover {
+      width: 0%;
+    }
+  }
+  
+  .portfolio-text-wrapper {
+    width: 100%;
+  }
+
+  .portfolio-p {
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+    visibility: visible;
+  }
+
+
+  // .portfolio-item:hover .portfolio-h2 {
+  //   margin-bottom: 0.3rem;
+  // }
+
+  .portfolio-item:hover .portfolio-p {
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .portfolio-item:hover .portfolio-text-wrapper {
+    width: 100%;
+  }
+
+  .portfolio-item:hover .portfolio-img {
+    width: 0%;
+  }
+}

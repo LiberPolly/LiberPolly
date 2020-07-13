@@ -47,11 +47,21 @@ section {
     height: 153vh;
   }
 }
+@media (max-width: 400px) {
+  .introduce {
+    height: 170vh;
+  }
+}
 .introduce .wrapper:before {
   background: #ff0000;
 }
 .skills-portfolio {
   background-image: url('../img/66.jpg');
+}
+@media (max-width: 400px) {
+  .skills-portfolio {
+    height: 112vh;
+  }
 }
 .skills-portfolio .wrapper:before {
   background: #faaa54;
@@ -70,6 +80,11 @@ section {
 @media (max-width: 480px) {
   .resume {
     height: 97vh;
+  }
+}
+@media (max-width: 400px) {
+  .resume {
+    height: 110vh;
   }
 }
 .resume .wrapper:before {
@@ -423,6 +438,37 @@ div .button {
     background-color: rgba(255, 255, 255, 0.9);
   }
 }
+@media (max-width: 400px) {
+  .portfolio-item {
+    margin: 0.5rem;
+    width: 480px;
+    height: 250px;
+  }
+  .portfolio-img {
+    width: 0%;
+  }
+  .portfolio-img :hover {
+    width: 0%;
+  }
+  .portfolio-text-wrapper {
+    width: 100%;
+  }
+  .portfolio-p {
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+    visibility: visible;
+  }
+  .portfolio-item:hover .portfolio-p {
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+  }
+  .portfolio-item:hover .portfolio-text-wrapper {
+    width: 100%;
+  }
+  .portfolio-item:hover .portfolio-img {
+    width: 0%;
+  }
+}
 * {
   font-family: "Montserrat-ExtraLight";
   font-weight: bold;
@@ -459,7 +505,7 @@ p {
 }
 @media (max-width: 1080px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     align-self: center;
   }
   h2 {
@@ -471,6 +517,15 @@ p {
     margin: 0;
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+}
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-size: 1.3rem;
   }
 }
 /* INTRODUCE */
@@ -554,12 +609,24 @@ p {
 @media (max-width: 480px) {
   .resume-wrapper {
     height: initial;
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
+  }
+}
+@media (max-width: 400px) {
+  .resume-wrapper h2 {
+    margin: 0;
+    margin-bottom: 0.5rem;
   }
 }
 @media (max-width: 1080px) {
   .resume-item p {
-    margin: 1rem 0 1rem 0;
+    margin: 0;
+  }
+}
+@media (max-width: 400px) {
+  .resume-item p {
+    margin: 0;
+    margin-bottom: 0.7rem;
   }
 }
 /* FOOTER */
