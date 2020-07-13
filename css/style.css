@@ -54,7 +54,7 @@ section {
 }
 @media (max-width: 400px) {
   .introduce {
-    height: 150vh;
+    height: 170vh;
   }
 }
 .introduce .wrapper:before {
@@ -71,7 +71,7 @@ section {
 }
 @media (max-width: 400px) {
   .skills-portfolio {
-    height: 112vh;
+    height: 130vh;
   }
 }
 .skills-portfolio .wrapper:before {
@@ -95,7 +95,7 @@ section {
 }
 @media (max-width: 400px) {
   .resume {
-    height: 110vh;
+    height: 130vh;
   }
 }
 .resume .wrapper:before {
@@ -386,7 +386,7 @@ div .button {
 @media (max-width: 1080px) {
   .portfolio-wrapper {
     margin: 0;
-    margin-top: 8rem;
+    margin-top: 5rem;
   }
   .skills {
     margin-top: 0;
@@ -615,7 +615,7 @@ p {
     justify-content: flex-start;
     align-content: center;
     height: 87%;
-    margin-top: 8rem;
+    margin-top: 5rem;
     padding: 1rem 1rem 0 1rem;
   }
 }
