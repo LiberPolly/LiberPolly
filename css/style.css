@@ -49,12 +49,12 @@ section {
 }
 @media (max-width: 420px) {
   .introduce {
-    height: 120vh;
+    height: 100vh;
   }
 }
 @media (max-width: 400px) {
   .introduce {
-    height: 170vh;
+    height: 150vh;
   }
 }
 .introduce .wrapper:before {
@@ -385,6 +385,7 @@ div .button {
 @media (max-width: 1080px) {
   .portfolio-wrapper {
     margin: 0;
+    margin-top: 13%;
   }
   .skills {
     margin-top: 0;
@@ -613,7 +614,8 @@ p {
     justify-content: flex-start;
     align-content: center;
     height: 87%;
-    padding: 5rem 1rem 0 1rem;
+    margin-top: 13%;
+    padding: 1rem 1rem 0 1rem;
   }
 }
 @media (max-width: 420px) {
