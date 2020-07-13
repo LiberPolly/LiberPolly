@@ -229,8 +229,13 @@ div .button {
 
 
 @media @breakpoint-mobile {
+  .portfolio-wrapper {
+    margin: 0;
+  }
+
+
   .skills {
-    margin-top: 1rem;
+    margin-top: 0;
   }
 
   .skill {
@@ -252,8 +257,8 @@ div .button {
 
   .portfolio-item {
     margin: 0.5rem;
-    width: 486px;
-    height: 243px;
+    width: 480px;
+    height: 280px;
   }
 
   .portfolio-img {
@@ -262,8 +267,12 @@ div .button {
 
   .portfolio-img p {
     visibility: hidden;
+    font-size: 0.1rem;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-left: 0;
   }
-
+  
   .portfolio-text-wrapper {
     width: 80%;
     background-color: fade(@white, 90%);
@@ -301,5 +310,4 @@ div .button {
   .portfolio-item:hover .portfolio-text-wrapper {
     background-color: fade(@white, 90%);
   }
-
 }

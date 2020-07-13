@@ -44,7 +44,7 @@ section {
   .introduce {
     background-image: none;
     background-color: #fff;
-    height: 143vh;
+    height: 153vh;
   }
 }
 .introduce .wrapper:before {
@@ -60,7 +60,7 @@ section {
 .resume {
   background-image: url('../img/3.jpg');
   background-position: top;
-  height: 81vh;
+  height: 80vh;
 }
 @media (max-width: 1280px) {
   .resume {
@@ -358,8 +358,11 @@ div .button {
   background: linear-gradient(to bottom, #ff3131 5%, #da0000 100%) repeat scroll 0 0 #da0000;
 }
 @media (max-width: 1080px) {
+  .portfolio-wrapper {
+    margin: 0;
+  }
   .skills {
-    margin-top: 1rem;
+    margin-top: 0;
   }
   .skill {
     margin: 1rem;
@@ -376,14 +379,18 @@ div .button {
   }
   .portfolio-item {
     margin: 0.5rem;
-    width: 486px;
-    height: 243px;
+    width: 480px;
+    height: 280px;
   }
   .portfolio-img {
     width: 20%;
   }
   .portfolio-img p {
     visibility: hidden;
+    font-size: 0.1rem;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-left: 0;
   }
   .portfolio-text-wrapper {
     width: 80%;
@@ -452,9 +459,8 @@ p {
 }
 @media (max-width: 1080px) {
   h1 {
-    align-self: center;
     font-size: 2.5rem;
-    margin: 0;
+    align-self: center;
   }
   h2 {
     margin-bottom: 1rem;
@@ -476,7 +482,7 @@ p {
 @media (max-width: 1080px) {
   .introduce-foto {
     visibility: visible;
-    width: 480px;
+    width: 320px;
     margin-top: 1rem;
     align-self: center;
   }
@@ -547,7 +553,6 @@ p {
 }
 @media (max-width: 480px) {
   .resume-wrapper {
-    margin-top: 5rem;
     height: initial;
     padding: 1rem;
   }
