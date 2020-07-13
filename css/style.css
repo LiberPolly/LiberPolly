@@ -47,7 +47,7 @@ section {
     height: 153vh;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   .introduce {
     height: 120vh;
   }
@@ -63,7 +63,7 @@ section {
 .skills-portfolio {
   background-image: url('../img/66.jpg');
 }
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   .skills-portfolio {
     height: 80vh;
   }
@@ -87,7 +87,7 @@ section {
     height: 80.5vh;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   .resume {
     height: 77vh;
   }
@@ -616,7 +616,7 @@ p {
     padding: 5rem 1rem 0 1rem;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   .resume-wrapper {
     height: initial;
     padding: 1rem 1rem 0 1rem;
