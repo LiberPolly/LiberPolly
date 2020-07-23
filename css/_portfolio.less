@@ -76,6 +76,7 @@
   flex-direction: row;
   justify-content: flex-start;
   padding: 0;
+  margin: 0.5rem;
   width: 600px;
   height: 300px;
   background-color: fade(@white, 80%);
@@ -316,7 +317,9 @@ div .button {
   .portfolio-item {
     margin: 0.5rem;
     width: 480px;
-    height: 250px;
+    min-height: 250px;
+    height: 100%;
+
   }
 
   .portfolio-img {
@@ -336,11 +339,6 @@ div .button {
     font-size: 0.9rem;
     visibility: visible;
   }
-
-
-  // .portfolio-item:hover .portfolio-h2 {
-  //   margin-bottom: 0.3rem;
-  // }
 
   .portfolio-item:hover .portfolio-p {
     line-height: 1.2rem;

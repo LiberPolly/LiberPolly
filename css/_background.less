@@ -16,7 +16,7 @@
 section {
   position: relative;
   padding: 1em;
-  height: 100vh;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   isolation: isolate;
@@ -38,15 +38,6 @@ section {
   @media @breakpoint-mobile {
     background-image: none;
     background-color: @white;
-    height: 153vh;
-  }
-
-  @media @breakpoint-mobile-s {
-    height: 100vh;
-  }
-
-  @media @breakpoint-mobile-xs {
-    height: 170vh;
   }
 }
 
@@ -56,15 +47,7 @@ section {
 
 .skills-portfolio {
   background-image: url('../img/66.jpg');
-  height: 98vh;
-
-  @media @breakpoint-mobile-s {
-    height: 80vh;
-  }
-
-  @media @breakpoint-mobile-xs {
-    height: 130vh;
-  }
+  min-height: 98vh;
 }
 
 .skills-portfolio .wrapper:before {
@@ -75,19 +58,7 @@ section {
 .resume {
   background-image: url('../img/3.jpg');
   background-position: top;
-  height: 81vh;
-
-  @media @breakpoint-laptop {
-    height: 80.5vh;
-  }
-
-  @media @breakpoint-mobile-s {
-    height: 77vh;
-  }
-
-  @media @breakpoint-mobile-xs {
-    height: 130vh;
-  }
+  min-height: 81vh;
 }
 
 .resume .wrapper:before {
