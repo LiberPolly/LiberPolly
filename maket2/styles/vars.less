@@ -1,0 +1,54 @@
+//main: style.less
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url('../fonts/Roboto/Roboto-Regular.ttf');
+  font-weight: normal;
+}
+
+@roboto: "Roboto-Regular";
+
+@bg-color: #f0f0f0;
+
+@border-color-light: #E5E5E5;
+@border-color-dark: #5f5f5f;
+
+@black: #000;
+@pink: #F03B8C;
+@white: #fff;
+
+@text-color-light: #afafaf;
+@text-color-medium: #8f8f8f;
+@text-color-dark: #5f5f5f;
+
+h3 {
+  font-size: 18px;
+  line-height: 110%;
+  font-weight: bold;
+  color: @black;
+  margin: 17px 0 17px 0;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.txt (@size: 18px; @height: 180%; @weight: normal; @color: @black) {
+  font-size: @size;
+  line-height: @height;
+  font-weight: @weight;
+  color: @color;
+}
+
+.user-select() {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+@breakpoint-mobile: ~"(max-width: 950px)";
+@breakpoint-tablet: ~"(max-width: 1280px)";

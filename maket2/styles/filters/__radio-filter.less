@@ -1,0 +1,56 @@
+//main: ../style.less
+
+.filter-list__radio {
+  position: absolute;
+  opacity: 0;
+}
+
+.filter-list__label_radio {
+  .filter-list__txt {
+    position: relative;
+    cursor: pointer;
+
+    &:before {
+      content: '';
+      top: -0.2em;
+      margin-right: 7px;
+      padding: 1px;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      border: 1px solid @pink;
+
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      opacity: 0;
+      left: 5px;
+      top: 12.5px;
+      width: 5px;
+      height: 5px;
+      border-radius: 100%;
+      background-color: @white;
+      border: 1px solid @white;
+      transition: 0.5s;
+    }
+
+  }
+
+  :checked+.filter-list__txt {
+    color: @pink;
+  }
+
+  :checked+.filter-list__txt:before {
+    background-color: @pink;
+    transition: 0.5s;
+  }
+
+  :checked+.filter-list__txt:after {
+    opacity: 1;
+    transition: 0.5s;
+  }
+}

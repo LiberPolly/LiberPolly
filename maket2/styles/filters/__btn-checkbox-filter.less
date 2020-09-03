@@ -1,0 +1,96 @@
+//main: ../style.less
+
+.btn-checkbox-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 7px;
+  padding: 0;
+  overflow: auto;
+  list-style-type: none;
+
+
+  &__item {
+    flex-grow: 1;
+    width: 67.5px;
+    height: 50px;
+
+    :hover {
+      color: @pink;
+    }
+
+    &_flex-grow {
+      flex-grow: 4;
+      margin-top: 10px;
+      border-radius: 2px;
+
+      :hover {
+        color: @pink;
+      }
+
+      :active {
+        background-color: @pink;
+        color: @white;
+        border-radius: 2px;
+        border-color: @pink;
+        transition-duration: 0.1s;
+      }
+    }
+  }
+
+  :checked+.btn-checkbox-list__txt {
+    background-color: @pink;
+    border-color: @pink;
+    color: @white;
+    transition: 0.3s;
+  }
+
+  &__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    .user-select();
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__reset {
+    display: none;
+  }
+
+  &__txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    .txt(@color: @text-color-light);
+    text-align: center;
+    border: 1px solid @border-color-light;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    transition: 0.3s;
+
+    &_first {
+      border-right: 0px;
+      border-radius: 2px 0 0 2px;
+    }
+
+    &_middle {
+      border-right: 0px;
+    }
+
+    &_last {
+      border-radius: 0 2px 2px 0;
+    }
+
+    &_separate {
+      border-radius: 2px;
+    }
+  }
+}

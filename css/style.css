@@ -276,6 +276,9 @@ section {
   background-color: #378cca;
   justify-content: flex-end;
 }
+.shop2 {
+  background-image: url('../img/logo-shop2.jpg');
+}
 .shop p {
   margin-bottom: 3rem;
 }

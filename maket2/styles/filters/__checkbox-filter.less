@@ -1,0 +1,60 @@
+//main: ../style.less
+
+.filter-list__checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+// .filter-list__txt_options {
+//   margin: 1.9px 0 0 0.5px;
+// }
+.filter-list__txt_options-first {
+  margin: -1.4px 0 0 0.5px;
+}
+
+.filter-list__label_checkbox {
+  position: relative;
+  cursor: pointer;
+
+  .filter-list__txt {
+    cursor: pointer;
+
+    &:before {
+      content: '';
+      margin: 0 8px 0 0;
+      width: 14px;
+      height: 14px;
+      border-radius: 2px;
+      border: 1px solid @pink;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      opacity: 0;
+      left: 2px;
+      top: 10px;
+      width: 9px;
+      height: 4px;
+      border-radius: 1px;
+      border-left: 3px solid @white;
+      border-bottom: 3px solid @white;
+      transform: rotate(-45deg);
+      transition: 0.5s;
+    }
+  }
+
+  :checked+.filter-list__txt {
+    color: @pink;
+  }
+
+  :checked+.filter-list__txt:before {
+    background-color: @pink;
+  }
+
+  :checked+.filter-list__txt:after {
+    opacity: 1;
+  }
+}

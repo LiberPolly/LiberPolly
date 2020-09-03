@@ -1,0 +1,127 @@
+//main: ../style.less
+
+.catalog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 900px;
+
+  &__scrl {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 100%;
+
+    @media @breakpoint-tablet {
+      justify-content: center;
+    }
+  }
+
+  &__scrl_hidden {
+    display: none;
+    transition: 3s;
+  }
+
+  &__show-more-btn {
+    margin-top: -11px;
+    margin-right: 30px;
+  }
+
+  @media @breakpoint-tablet {
+    justify-content: center;
+    padding-left: 30px;
+  }
+
+  @media @breakpoint-mobile {
+    padding-top: 70px;
+  }
+}
+
+.catalog-item {
+  position: relative;
+  width: 270px;
+  height: 415px;
+  margin-bottom: 40px;
+  margin-right: 30px;
+
+  border-radius: 10px;
+  background-color: @white;
+
+  &__img {
+    height: 250px;
+    border-radius: 10px 10px 2px 2px;
+    // background: url(../../img/catalog-item.jpg) @pink top no-repeat;
+    background: url(../../maket2/img/catalog-item.jpg) @pink top no-repeat;
+
+  }
+
+  &__pin {
+    position: absolute;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 77px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: @pink;
+
+    .pin__txt {
+      .txt(@size: 12px; @height: 230%; @weight: normal; @color: @white);
+    }
+  }
+
+  &__pin_services {
+    left: 10px;
+  }
+
+  &__pin_comfort {
+    left: 98px;
+  }
+
+  &__txt-wrapper {
+    padding-left: 15px;
+  }
+
+  &__header {
+    margin: 16px 0 15px 0;
+  }
+
+  &__deadline {
+    .txt();
+  }
+
+  .subway {
+    margin-top: 9px;
+    margin-bottom: 6px;
+
+    &__subway-svg {
+      width: 16px;
+      height: 11px;
+
+    }
+
+    &__walker-svg {
+      margin-bottom: -2px;
+      margin-left: 1px;
+      width: 16px;
+      height: 16px;
+    }
+
+    &__station-txt {
+      margin-left: 4px;
+      .txt(@size: 16px);
+    }
+
+    &__distance-txt {
+      .txt(@size: 16px, @color: @text-color-medium);
+    }
+  }
+
+  &__adress {
+    .txt(@color: @text-color-medium);
+  }
+
+
+}

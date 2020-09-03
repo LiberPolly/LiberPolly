@@ -1,0 +1,47 @@
+//main: ../style.less
+
+.filter-services {
+  &__txt {
+    position: relative;
+    margin-top: 6px;
+    .txt(@color: @black);
+    cursor: pointer;
+
+    &:before {
+      content: "";
+      width: 40px;
+      height: 20px;
+      margin: 0px 8px 0 3px;
+      border: solid 1px @pink;
+      border-radius: 50px;
+      background: @white;
+      cursor: pointer;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 6px;
+      width: 14px;
+      height: 14px;
+      border: solid 1px @pink;
+      border-radius: 15px;
+      background: @pink;
+      cursor: pointer;
+      transition: left 0.4s;
+    }
+  }
+
+  &__checkbox:checked+.filter-services__txt:after {
+    left: 25px;
+    background-color: @white;
+    border-color: @white;
+    transition: left 0.4s;
+  }
+
+  &__checkbox:checked+.filter-services__txt:before {
+    left: 23px;
+    background-color: @pink;
+  }
+}

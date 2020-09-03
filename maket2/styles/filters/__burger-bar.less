@@ -1,0 +1,49 @@
+//main: ../style.less
+
+.burger {
+	position: absolute;
+	display: none;
+	z-index: 100;
+	right: 15px;
+	top: 0;
+	
+	@media @breakpoint-mobile {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}	
+
+.burger__checkbox {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 1; 
+}
+
+.burger__bar{
+  width: 55px;
+  height: 8px;
+  margin-bottom: 10px;
+  background: @pink;
+  border-radius: 4px;
+}
+
+.burger__bar_first {
+  transform-origin: 4px 0px;
+}
+
+.burger .burger__checkbox:checked ~ .burger__bar_first {
+  transform: rotate(45deg) translate(8px);
+}
+.burger .burger__checkbox:checked ~ .burger__bar_second {
+  transform: rotate(495deg) translate(4px);   
+}
+.burger .burger__checkbox:checked ~ .burger__bar_third {
+  transform: rotate(45deg);
+  opacity: 0;
+}
