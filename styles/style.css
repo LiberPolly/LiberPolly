@@ -125,7 +125,7 @@ section {
 .resume {
   background-image: url('../img/3.jpg');
   background-position: top;
-  min-height: 81.4vh;
+  min-height: 79.8vh;
 }
 .resume .wrapper:before {
   background: #f36f16;
