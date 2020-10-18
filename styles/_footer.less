@@ -1,0 +1,39 @@
+//main: style.less
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: @red;
+  color: @white;
+}
+.footer__divider {
+  margin: 0 1rem 0 1rem;
+ 
+  @media @breakpoint-mobile {
+    visibility: hidden;
+  }
+  @media @breakpoint-mobile {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+}
+.footer-link {
+  outline: none;
+  text-decoration: none;
+  :hover {
+    color: fade(@white, 50%);
+  }
+  :active {
+    color: fade(@white, 20%);
+  }
+}
+.footer-txt {
+  color: @white;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  @media @breakpoint-mobile {
+    font-size: 1.2rem;
+    line-height: 1rem;
+  }
+}

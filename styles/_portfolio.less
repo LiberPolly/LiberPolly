@@ -60,11 +60,12 @@
 
 /* PORTFOLIO */
 
-.portfolio-wrapper {
+.skills-wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  -webkit-justify-content: space-evenly; 
   margin-top: 8rem;
   margin-bottom: 10%;
 }
@@ -144,8 +145,6 @@
   margin-bottom: 3rem;
 }
 
-
-
 .portfolio-text-wrapper {
   position: relative;
   display: flex;
@@ -157,10 +156,6 @@
   transition-duration: 0.2s;
 }
 
-.portfolio-text-wrapper div {
-  margin-bottom: 1.5rem;
-}
-
 .portfolio-h2 {
   margin: 0 0 1rem 0;
   color: @black;
@@ -168,15 +163,19 @@
 }
 
 .portfolio-p {
+  visibility: hidden;
   margin: 0;
   line-height: 0;
-  font-size: 0.2rem;
-  visibility: hidden;
+  font-size: 0.01rem;
+  color: transparent;
+  transition-duration: 0.2s;
 }
 
-div .button {
-  position: absolute;
-  bottom: 1rem;
+.button-wrapper {
+width: 100%;
+display: flex;
+justify-content: flex-end;
+margin-bottom: 0;
 }
 
 .button {
@@ -203,6 +202,7 @@ div .button {
   align-items: flex-end;
 }
 
+
 .portfolio-item:hover .lamb p {
   color: @black;
   font-weight: bold;
@@ -221,6 +221,7 @@ div .button {
   visibility: visible;
   line-height: 1.5rem;
   font-size: 1rem;
+  color: @black;
 }
 
 .portfolio-item:hover .button {

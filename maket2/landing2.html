@@ -269,7 +269,6 @@
       </a>
     </main>
 
-
     <aside class="filters-sidebar">
       <div class="burger">
         <input type="checkbox" class="burger__checkbox" />
@@ -370,6 +369,10 @@
                 <span class="filter-header__txt filter-header__txt_h3">Дополнительные опции</span>
                 <svg class="filter-header__arrow" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#arrow"></use>
+
+                <symbol id="arrow" viewBox="0 0 13 8">
+                    <!-- <path d="M6.036 0.611083L0.191897 6.45712C-0.0639745 6.71364 -0.0639745 7.12925 0.191897 7.38642C0.44777 7.64294 0.863375 7.64294 1.11925 7.38642L6.49964 2.00408L11.88 7.38577C12.1359 7.64229 12.5515 7.64229 12.808 7.38577C13.0639 7.12925 13.0639 6.713 12.808 6.45648L6.96399 0.610435C6.71076 0.357856 6.28863 0.357856 6.036 0.611083Z"/> -->
+                  </symbol>
                 </svg>
               </label>
             </div>
@@ -436,7 +439,7 @@
 
           <li class="filters__item filters-submit-btn">
             <label class="filter-header__label filters-submit-btn__label">
-              <input type="submit" class="filter-header__checkbox">
+              <input type="button" class="filter-header__checkbox">
               <span class="filter-header__txt filters-submit-btn__txt">Применить фильтры</span>
             </label>
           </li>
@@ -452,6 +455,7 @@
     </aside>
   </div>
   <script src="script.js"></script>
+  <script src="../svgxuse.js" defer></script>
 </body>
 
 </html>

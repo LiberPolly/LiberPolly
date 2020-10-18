@@ -1,0 +1,53 @@
+//main: style.less
+.introduce-foto {
+  visibility: hidden;
+  width: 0.1px;
+  margin: 0;
+
+  @media @breakpoint-mobile {
+    visibility: visible;
+    width: 320px;
+    margin-top: 1rem;
+    align-self: center;
+  }
+}
+
+.introduce {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.introduce-wrapper {
+  margin: 5rem 5rem 0 0;
+  width: 700px;
+
+  @media @breakpoint-laptop {
+    margin-right: 0;
+    width: 600px;
+  }
+
+  @media @breakpoint-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    margin-top: 4.5rem;
+  }
+}
+
+.introduce-txt {
+  margin: 2rem 0 5rem 0;
+  @media @breakpoint-laptop {
+    margin: 0.5rem 0 0 0;
+  }
+  @media @breakpoint-mobile {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,43 @@
+//main: style.less
+.resume-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-left: 0;
+  @media @breakpoint-laptop {
+    background-color: fade(@white, 70%);
+    height: 100%;
+  }
+  @media @breakpoint-mobile {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    height: (100%-13rem);
+    margin-top: 5rem;
+    padding: 1rem 1rem 0 1rem;
+  }
+  @media @breakpoint-mobile-s {
+    height: initial;
+    padding: 1rem 1rem 0 1rem;
+  }
+}
+
+@media @breakpoint-mobile-xs {
+  .resume-wrapper h2 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.resume-item__p {
+  @media @breakpoint-mobile {
+    margin: 0;
+  }
+
+  @media @breakpoint-mobile-xs {
+    margin: 0;
+    margin-bottom: 0.7rem;
+  }
+}

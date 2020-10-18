@@ -200,6 +200,7 @@ a {
 }
 .filters-reset-btn__txt:after {
   content: '×';
+  display: inline-block;
   position: absolute;
   right: -17px;
   top: 1px;
@@ -347,6 +348,7 @@ a {
 }
 .filter-list__label_radio .filter-list__txt:before {
   content: '';
+  display: inline-block;
   top: -0.2em;
   margin-right: 7px;
   padding: 1px;
@@ -359,6 +361,7 @@ a {
 }
 .filter-list__label_radio .filter-list__txt:after {
   content: "";
+  display: inline-block;
   position: absolute;
   opacity: 0;
   left: 5px;
@@ -397,6 +400,7 @@ a {
 }
 .filter-list__label_checkbox .filter-list__txt:before {
   content: '';
+  display: inline-block;
   margin: 0 8px 0 0;
   width: 14px;
   height: 14px;
@@ -407,6 +411,7 @@ a {
 }
 .filter-list__label_checkbox .filter-list__txt:after {
   content: "";
+  display: inline-block;
   position: absolute;
   opacity: 0;
   left: 2px;
@@ -439,6 +444,7 @@ a {
 }
 .filter-services__txt:before {
   content: "";
+  display: inline-block;
   width: 40px;
   height: 20px;
   margin: 0px 8px 0 3px;
@@ -449,6 +455,7 @@ a {
 }
 .filter-services__txt:after {
   content: "";
+  display: inline-block;
   position: absolute;
   top: 8px;
   left: 6px;

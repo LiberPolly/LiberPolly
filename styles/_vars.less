@@ -1,0 +1,87 @@
+//main: style.less
+
+@font-face {
+  font-family: "Montserrat-ExtraLight";
+  src: url('../fonts/Montserrat/Montserrat-ExtraLight.ttf');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+  font-weight: 400;
+}
+
+@light: "Montserrat-ExtraLight";
+
+@regular: "Montserrat-Regular";
+
+@red: rgb(255, 0, 0);
+
+@black: #171a20;
+
+@white: #fff;
+
+@blue: #ddf5ff;
+
+@shadow: 0 0 5px 2px #666666;
+
+
+@breakpoint-mobile-xs: ~"(max-width: 400px)";
+@breakpoint-mobile-s: ~"(max-width: 420px)";
+@breakpoint-mobile: ~"(max-width: 1080px)";
+@breakpoint-laptop: ~"(max-width: 1280px)";
+
+
+h1 {
+  margin: 1.2rem;
+  font-size: 4rem;
+  color: @red;
+  @media @breakpoint-laptop {
+    margin-top: 0;
+    font-size: 3rem;
+  }
+  @media @breakpoint-mobile {
+    align-self: center;
+    font-size: 2.1rem;
+    align-self: center;
+  }
+  @media @breakpoint-mobile-xs {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+}
+
+h2 {
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: @red;
+  @media @breakpoint-laptop {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+  }
+  @media @breakpoint-mobile {
+    margin-bottom: 1rem;
+    align-self: center;
+    font-size: 1.5rem;
+  }
+  @media @breakpoint-mobile-xs {
+    font-size: 1.3rem;
+  }
+}
+
+p {
+  margin: 1rem;
+  line-height: 2rem;
+  color: @black;
+  @media @breakpoint-laptop {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    line-height: 1.9rem;
+  }
+  @media @breakpoint-mobile {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
