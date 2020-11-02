@@ -401,6 +401,11 @@ section {
 .shop2 {
   background-image: url('../img/logo-shop2.JPG');
 }
+.shop3 {
+  background-image: url('../img/logo-shop3.JPG');
+  background-position: right;
+  background-size: auto;
+}
 .shop p {
   margin-bottom: 3rem;
 }
