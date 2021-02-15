@@ -45,25 +45,14 @@
       <div class="wrapper"></div>
       <div class="introduce-wrapper">
          <h1>Галочкина Алина</h1>
-         <h2>Junior Frontend Developer</h2>
+         <h2>Junior JS Frontend Developer</h2>
          <img src="img/foto.jpg" class="introduce-foto" alt="foto">
          <div class="introduce-txt">
             <h2>Обо мне</h2>
-            <p>Я начинающий веб-разработчик. Начала самостоятельно изучать веб-разработку полтора года назад и для меня
-               она оказалась той самой работой мечты, которую делаешь, потому что любишь.
-            </p>
-            <p>Планирую в ближайшее время
-               расширять свои знания во фронтенде, изучать бэкенд и захватить весь мир. А также ищу работу, которая
-               поможет воплотить мои планы.</p>
-            <p>Я легко нахожу общий язык с людьми, не люблю конфликты, понимаю
-               важность командной работы и очень ценю позитивную атмосферу в коллективе. Постоянно анализирую
-               свою
-               эффективность. Видеть результат своей работы и иметь возможность профессионально развиваться это то, что
-               меня по-настоящему вдохновляет.
-            </p>
-            <p>Из личного — люблю читать, рисовать, путешествовать на машине, без машины, просто гулять, заниматься
-               фитнесом, вообще чем-нибудь заниматься, слушать подкасты, научпоп, психологию.
-            </p>
+            <p>Изучаю веб-разработку самостоятельно. Начала с курса "Javascript-разработчик" от GeekBrains, затем самоучитель по JS от O'Reilly, проштудировала learn.javascript.ru, параллельно - обучающие видео на YouTube по изучаемым темам, документация к используемым инструментам.</p>
+            <p>Сейчас продолжаю самообучение и активно ищу работу верстальщиком или джуниор фронтенд-разработчиком.</p>
+            <p>Я легко нахожу общий язык с людьми и умею работать в команде. Самое важное для меня это видеть результат своей работы и иметь возможность профессионально развиваться.</p>
+            <p>Помимо веб-разработки люблю рисовать, читать, гулять, слушаю подкасты, научпоп, психологию.</p>
          </div>
       </div>
    </section>
@@ -78,6 +67,9 @@
             </div>
             <div class="skill">
                <div class="skill-wrapper"><span class="skill-wrapper__span">CSS3</span></div>
+            </div>
+            <div class="skill">
+               <div class="skill-wrapper"><span class="skill-wrapper__span">Pug</span></div>
             </div>
             <div class="skill">
                <div class="skill-wrapper"><span class="skill-wrapper__span">LESS</span></div>
@@ -103,6 +95,24 @@
 
 
       <div class="portfolio">
+         
+         <article class="portfolio-item">
+            <div class="portfolio-img shop fsd-hotel">
+               <p></p>
+            </div>
+            <div class="portfolio-text-wrapper">
+               <div class="portfolio-text">
+                  <h2 class="portfolio-h2">Вёрстка</h2>
+                  <p class="portfolio-p">Задание от компании FSD - вёрстка страниц бронирования отеля по макету из Figma. 4 страницы UI kit и 4 страницы отеля.</p>
+                  <p class="portfolio-p">Использованы: Webpack, Pug, Less, Lodash, jQuery плагины, компонентный подход, БЭМ, HTML-теги &lt;template&gt; и &lt;details&gt;.</p>
+                  <p class="portfolio-p">Верстка находится в процессе разработки.</p>
+               </div>
+               <div class="button-wrapper">
+                  <a class="button" href="https://liberpolly.github.io/FSD_2nd_task/" target="blank">Открыть</a>
+               </div>
+            </div>
+         </article>
+
          <article class="portfolio-item">
             <div class="portfolio-img lamb">
                <p>Où est le mouton?</p>
@@ -110,8 +120,8 @@
             <div class="portfolio-text-wrapper">
                <div class="portfolio-text">
                   <h2 class="portfolio-h2">Игра</h2>
-                  <p class="portfolio-p">Игра для изучения французского языка. Ее суть в том, чтобы
-                     правильно ответить, где находится овечка в соответствии с картинкой. Игра написана на Vue.js,
+                  <p class="portfolio-p">Игра для изучения французского языка. Её суть в том, чтобы
+                     правильно ответить, где находится овечка в соответствии с картинкой. Написана на Vue.js,
                      состояние игры сохраняется в Local Storage. В консоль выводятся правильные ответы по каждому
                      вопросу.</p>
                </div>
@@ -122,28 +132,13 @@
          </article>
 
          <article class="portfolio-item">
-            <div class="portfolio-img shop">
-               <p></p>
-            </div>
-            <div class="portfolio-text-wrapper">
-               <div class="portfolio-text">
-                  <h2 class="portfolio-h2">Верстка</h2>
-                  <p class="portfolio-p">Верстка лендинга по макету.</p>
-               </div>
-               <div class="button-wrapper">
-                  <a class="button" href="maket/landing.html" target="blank">Открыть</a>
-               </div>
-            </div>
-         </article>
-
-         <article class="portfolio-item">
             <div class="portfolio-img shop shop2">
                <p></p>
             </div>
             <div class="portfolio-text-wrapper">
                <div class="portfolio-text">
-                  <h2 class="portfolio-h2">Верстка</h2>
-                  <p class="portfolio-p">Верстка лендинга по макету.</p>
+                  <h2 class="portfolio-h2">Вёрстка</h2>
+                  <p class="portfolio-p">Тестовое задание - вёрстка карточек товаров и блока фильтров.</p>
                </div>
                <div class="button-wrapper">
                   <a class="button" href="maket2/landing2.html" target="blank">Открыть</a>
@@ -158,10 +153,25 @@
             <div class="portfolio-text-wrapper">
                <div class="portfolio-text">
                   <h2 class="portfolio-h2">Каталог товаров</h2>
-                  <p class="portfolio-p">Каталог товаров, сформированный на основе данных из внешнего файла. Переключается стоимость товара, по клику изменяется количество товара.</p>
+                  <p class="portfolio-p">Тестовое задание - каталог товаров, сформированный на основе данных из внешнего файла. Переключается стоимость товара, по клику изменяется количество товара.</p>
                </div>
                <div class="button-wrapper">
                   <a class="button" href="https://petrovich-test-task.herokuapp.com/" target="blank">Открыть</a>
+               </div>
+            </div>
+         </article>
+
+         <article class="portfolio-item">
+            <div class="portfolio-img shop">
+               <p></p>
+            </div>
+            <div class="portfolio-text-wrapper">
+               <div class="portfolio-text">
+                  <h2 class="portfolio-h2">Вёрстка</h2>
+                  <p class="portfolio-p">Вёрстка первого учебного лендинга по макету :)</p>
+               </div>
+               <div class="button-wrapper">
+                  <a class="button" href="maket/landing.html" target="blank">Открыть</a>
                </div>
             </div>
          </article>

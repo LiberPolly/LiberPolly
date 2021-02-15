@@ -104,6 +104,7 @@ section {
 .introduce {
   background-image: url(../img/my-foto.jpg);
   background-position: bottom;
+  min-height: 97vh;
 }
 @media (max-width: 1080px) {
   .introduce {
@@ -125,7 +126,7 @@ section {
 .resume {
   background-image: url('../img/3.jpg');
   background-position: top;
-  min-height: 79.8vh;
+  min-height: 83vh;
 }
 .resume .wrapper:before {
   background: #f36f16;
@@ -261,6 +262,11 @@ section {
 }
 .introduce-txt {
   margin: 2rem 0 5rem 0;
+}
+.introduce-txt p {
+  font-size: 1.15rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
 }
 @media (max-width: 1280px) {
   .introduce-txt {
@@ -406,6 +412,10 @@ section {
   background-position: right;
   background-size: auto;
 }
+.fsd-hotel {
+  background-image: url('../img/fsd-hotel.jpg');
+  background-position: center;
+}
 .shop p {
   margin-bottom: 3rem;
 }
@@ -426,6 +436,7 @@ section {
 .portfolio-p {
   visibility: hidden;
   margin: 0;
+  margin-bottom: 0.2rem;
   line-height: 0;
   font-size: 0.01rem;
   color: transparent;
