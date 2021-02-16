@@ -6,16 +6,16 @@
   align-items: center;
   background-color: @red;
   color: @white;
+  @media @breakpoint-mobile {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
 }
 .footer__divider {
   margin: 0 1rem 0 1rem;
  
   @media @breakpoint-mobile {
     visibility: hidden;
-  }
-  @media @breakpoint-mobile {
-    flex-direction: column;
-    padding: 1.5rem;
   }
 }
 .footer-link {
